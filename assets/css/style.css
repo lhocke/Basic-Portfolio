@@ -1,14 +1,24 @@
-header {
-	width: 100%
-	background-color: #4aaaa5;
+/* Background pattern from Subtle Patterns */
+
+body {
+	background-color: #333333;
+	background-image: url(../images/concrete-texture.png);
+	/*solved issue of relative path. path is relative to css not html*/
 }
 
-#name {
+header {
+	padding: 0 10px;
 	float: left;
-}
-#nav-bar {
-	float: right;
 	background: #4aaaa5;
+}
+
+#nav-bar {
+	padding: 20px 0;
+	float: right;
+}
+
+.link {
+	padding: 20px;
 }
 
 .clearfix:after {
