@@ -1,5 +1,9 @@
 /* Background pattern from Subtle Patterns */
 
+* {
+	font-color: #777777;
+}
+
 body {
 	background-color: #333333;
 	background-image: url(../images/concrete-texture.png);
@@ -11,6 +15,11 @@ header {
 	float: left;
 	background: #4aaaa5;
 }
+
+#profile-pic {
+	float: left;
+}
+
 
 #nav-bar {
 	padding: 20px 0;
@@ -25,4 +34,24 @@ header {
   content: "";
   display: table;
   clear: both;
+}
+
+#about-box {
+	float: left;
+	width: 75%;
+}
+
+#bio {
+	float: left;
+	width: 50%;
+}
+
+#connect {
+	width: 25%;
+	position: absolute;
+	right: 0;
+}
+
+#git-logo, #linkedin-logo, #stackoverflow-logo {
+	width: 50px;
 }
