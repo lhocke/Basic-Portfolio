@@ -10,6 +10,7 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
 }
 h1 {
 	font-size: 32px;
@@ -20,18 +21,20 @@ h1 {
 
 h2 {
 	font-size: 24px;
+	padding: 20px;
+	border-bottom: solid 3px #dddddd;
 }
 
 h3 {
 	font-size: 20.8px;
 }
-/*html {
+html {
     position: relative;
-    min-height: 50%;
-}*/
+    min-height: 100%;
+}
 
 body {
-/*    margin: 0 0 200px;  bottom = footer height */
+    margin: 0 0 200px;  bottom = footer height 
 	background-color: #333333;
 	background-image: url(../images/concrete-texture.png);
 	/*solved issue of relative path. path is relative to css not html*/
@@ -51,11 +54,15 @@ header {
 	min-width: 1080px;
 }
 
+
+
+
 .container {
 	position: relative;
 	top: 25px;
 	width: 960px;
 	margin-left: 5%;
+	margin-bottom: 5%;
 }
 
 #name {
@@ -111,6 +118,7 @@ nav {
 }
 
 aside {
+	text-align: center;
 	/*padding: 25px;*/
 	width: 270px;
 	position: absolute;
@@ -176,12 +184,48 @@ aside {
 }
 
 #sidebar {
-	border-bottom: 2px;
-	border-bottom-style: solid;
+	border-bottom: 1px solid ##dddddd;
 }
+
 form {
 	border-top: 2px solid #dddddd;
 }
+label {
+	font-size: 18px;
+	font-family: Helvetica;
+	font-weight: bold;
+	color: #777777;
+}
+
+input {
+	font-family: Helvetica;
+	color: #cccccc;
+	width: 100%;
+	display: block;
+	border: solid 1.5px #dddddd;
+}
+
+textarea {
+	font-family: Helvetica;
+	color: #cccccc;
+	width: 100%;
+	display: block;
+	border: solid 1.5px #dddddd;
+}
+
+input#submit {
+	font-size: 18px;
+	font-family: Helvetica;
+	color: #ffffff;
+	text-align: center;
+	width: 116px;
+	padding: 17px;
+	border: none;	
+	background: #4aaaa5;
+}
+
+
+
 .logo {
 	width: 50px;
 
@@ -201,8 +245,8 @@ footer {
 	font-family: sans-serif;
 	color: #dddddd;
 	text-align: center;
-	padding: 32px;
-	/*height: 64px;*/
+	padding-top: 24px;
+	height: 48px;
 	margin: 35px 0 0 0;
 	border-top: solid 9px #4aaaa5;
 	background: #666666;

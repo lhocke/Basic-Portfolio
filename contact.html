@@ -23,22 +23,28 @@
 
 	<div class="container">
 		<section class="info-box">
-			<h2>Contact</h2>
+			<h1 class="subject">Contact</h2>
 
-			<form>
-				Name<br>
+			<form name="contact_form" action="mailto: dylan.ishihara@gmail.com" method="post" enctype="text/plain">
+				<label>Name</label>
+				<br>
 				<input type="text" name="name" placeholder="John Smith">
 				<br>
 
-				Email<br>
+				<label>Email</label>
+				<br>
 				<input type="text" name="email" placeholder="example@gmail.com">
 				<br>
 
-				Message<br>
+				<label>Message</label>
+				<br>
 				<input type="text" name="message">
+				<textarea name="message" rows="6" cols="75"></textarea>
+
+				<input id="submit" type="submit" Value="Submit">
 			</form>
 		</section>
-	<div class="clearfix"></div>
+
 		<aside>
 			<h2 id="sidebar">Connect with Me</h2>
 
