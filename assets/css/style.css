@@ -25,9 +25,13 @@ h2 {
 h3 {
 	font-size: 20.8px;
 }
+/*html {
+    position: relative;
+    min-height: 50%;
+}*/
 
 body {
-	
+/*    margin: 0 0 200px;  bottom = footer height */
 	background-color: #333333;
 	background-image: url(../images/concrete-texture.png);
 	/*solved issue of relative path. path is relative to css not html*/
@@ -43,7 +47,8 @@ header {
 	background-color: #ffffff;
 	border-bottom: 2px;
 	border-color: #cccccc;
-	border-bottom-style: solid;	 
+	border-bottom-style: solid;
+	min-width: 1080px;
 }
 
 .container {
@@ -105,14 +110,6 @@ nav {
 	
 }
 
-/*#bio {
-	margin-top: -15px;
-	margin-left: 10px;
-	float: left;
-	width: 50%;
-	text-align: justify;
-}*/
-
 aside {
 	/*padding: 25px;*/
 	width: 270px;
@@ -123,24 +120,68 @@ aside {
 	/*border: 2px;*/
 	background-color: #ffffff;
 }
-
-.image-set1{
-
+/*#bio {
+	margin-top: -15px;
+	margin-left: 10px;
+	float: left;
+	width: 50%;
+	text-align: justify;
+}*/
+.hidden {
+	visibility: hidden;
 }
 
-.image-set2{
 
+.pic {
+	width: 100%;
+	height: auto;
+	border: solid 1px #dddddd;
+	margin-right: 32px;
+	margin-left: 24px;
+	position: relative;
+}
+.image-set1 {
+	display: flex;
+	justify-content: center;
 }
 
-.image-set3{
+.image-set2 {
+	margin: 32px 0 0 0;
+	display: flex;
+	justify-content: center;
+}
 
+.image-set3 {
+	margin: 32px 0 32px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.portfolio {
+	width: 266px;
+	height: auto;
+}
+
+.comment {
+	font-size: 20px;
+	font-family: serif;
+	text-align: center;
+	width: 100%;
+	padding-top: 9%;
+	padding-bottom: 9%;
+	position: absolute;
+	bottom: 10px;
+	color: #ffffff;
+	background: #4aaaa5;
 }
 
 #sidebar {
 	border-bottom: 2px;
 	border-bottom-style: solid;
 }
-
+form {
+	border-top: 2px solid #dddddd;
+}
 .logo {
 	width: 50px;
 
@@ -152,16 +193,22 @@ aside {
 }
 
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
+	left:0;
 	width: 100%;
 	font-size: 14px;
 	font-family: sans-serif;
 	color: #dddddd;
 	text-align: center;
 	padding: 32px;
+	/*height: 64px;*/
 	margin: 35px 0 0 0;
 	border-top: solid 9px #4aaaa5;
-	clear: both;
 	background: #666666;
+	clear: both;
 }
+
+
+
+
