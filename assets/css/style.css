@@ -54,9 +54,6 @@ header {
 	min-width: 1080px;
 }
 
-
-
-
 .container {
 	position: relative;
 	top: 25px;
@@ -76,18 +73,7 @@ header {
 	color: white;
 }
 
-
-
-#profile-pic {
-	height: 200px;
-	width: 200px;
-	margin-right: 5px;
-	float: left;
-}
-
-
 nav {
-	/*display: inline-block;*/
 	color: #777777;
 	position: relative;
 	right: 50px;
@@ -98,7 +84,6 @@ nav {
 .link {
 	padding: 20px;
 }
-
 
 .clearfix:after {
   content: "";
@@ -114,7 +99,6 @@ nav {
 	background-color: #ffffff;
 	text-align: justify;
 	padding: 0 5px;
-	
 }
 
 aside {
@@ -128,13 +112,37 @@ aside {
 	/*border: 2px;*/
 	background-color: #ffffff;
 }
-/*#bio {
-	margin-top: -15px;
-	margin-left: 10px;
+
+#sidebar {
+	border-bottom: 1px solid ##dddddd;
+	text-align: center;
+	width: 200px;
+	padding-bottom: 5px;
+	padding-top: 15px;
+	margin-left: 15px;
+}
+
+.logo {
+	margin: 15px;
+	width: 50px;
+}
+
+/*index css*/
+
+.bio {
+	margin-top: 15px;
+}
+
+#profile-pic {
+	height: 200px;
+	width: 200px;
+	margin-right: 5px;
 	float: left;
-	width: 50%;
-	text-align: justify;
-}*/
+}
+
+/*portfolio css*/
+
+
 .hidden {
 	visibility: hidden;
 }
@@ -149,6 +157,7 @@ aside {
 	position: relative;
 }
 .image-set1 {
+	margin-top: 10px;
 	display: flex;
 	justify-content: center;
 }
@@ -183,12 +192,16 @@ aside {
 	background: #4aaaa5;
 }
 
-#sidebar {
-	border-bottom: 1px solid ##dddddd;
+.subject {
+	padding: 10px 0 0 5px;
+	border-bottom: solid 2px #cccccc;
 }
 
+
+
+/*contact form css*/
 form {
-	border-top: 2px solid #dddddd;
+	margin: 10px;
 }
 label {
 	font-size: 18px;
@@ -205,15 +218,11 @@ input {
 	border: solid 1.5px #dddddd;
 }
 
-textarea {
-	font-family: Helvetica;
-	color: #cccccc;
-	width: 100%;
-	display: block;
-	border: solid 1.5px #dddddd;
+.message {
+	height: 300px;
 }
 
-input#submit {
+#submit {
 	font-size: 18px;
 	font-family: Helvetica;
 	color: #ffffff;
@@ -224,12 +233,7 @@ input#submit {
 	background: #4aaaa5;
 }
 
-
-
-.logo {
-	width: 50px;
-
-}
+/*footer CSS*/
 
 .copyright {
 	height: 11px;

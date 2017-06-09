@@ -5,6 +5,7 @@
 	<title>Dylan Ishihara</title>
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<base target=" _blank">
 </head>
 <body>
 	<header>
@@ -23,10 +24,10 @@
 
 	<div class="container">
 		<section class="info-box">
-			<h1 class="subject">Contact</h2>
+			<h1 class="subject">Contact</h1>
 
 			<form name="contact_form" action="mailto: dylan.ishihara@gmail.com" method="post" enctype="text/plain">
-				<label>Name</label>
+				<label class="name">Name</label>
 				<br>
 				<input type="text" name="name" placeholder="John Smith">
 				<br>
@@ -38,8 +39,7 @@
 
 				<label>Message</label>
 				<br>
-				<input type="text" name="message">
-				<textarea name="message" rows="6" cols="75"></textarea>
+				<input class="message" type="text" name="message">
 
 				<input id="submit" type="submit" Value="Submit">
 			</form>
@@ -48,7 +48,7 @@
 		<aside>
 			<h2 id="sidebar">Connect with Me</h2>
 
-			<a href="#">
+			<a href="https://github.com/lhocke">
 				<img class="logo" src="assets/images/github_square.png">
 			</a>
 
